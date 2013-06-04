@@ -1,2 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/data/dirk/log grote bestanden/19feb2013/real data/780/vshape/on_reprate'
+let g:netrw_dirhist_2='/etc/network'
+let g:netrw_dirhist_3='/home/dbs660/dev/bin/GPIB'
+let g:netrw_dirhist_4='/home/dbs660/experiments'
+let g:netrw_dirhist_5='/home/dbs660/dev/PiezoScanPMT'
+let g:netrw_dirhist_6='/home/dbs660/dev/bin'
