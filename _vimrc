@@ -5,7 +5,6 @@
 " Pep8 - http://pypi.python.org/pypi/pep8
 " Pyflakes
 " Ack
-" Rake & Ruby for command-t
 " nose, django-nose
 
 " ==========================================================
@@ -113,8 +112,9 @@ imap <C-W> <C-O><C-W>
 " Open NerdTree
 map <leader>n :NERDTreeToggle<CR>
 
-" Run command-t file search
-map <leader>f :CommandT<CR>
+map <leader>f :CtrlP<CR>
+map <leader>b :CtrlPBuffer<CR>
+
 " Ack searching
 nmap <leader>a <Esc>:Ack!
 
@@ -242,6 +242,8 @@ else
     colorscheme elflord
 endif
 
+colorscheme molokai
+
 " Paste from clipboard
 map <leader>p "+p
 
@@ -305,10 +307,13 @@ if filereadable($VIRTUAL_ENV . '/.vimrc')
     source $VIRTUAL_ENV/.vimrc
 endif
 
-set colorcolumn=79
+if exists("&colorcolumn")
+   set colorcolumn=79
+endif
+
 set tw=79
 inoremap # X<C-H>#
 
-" make pdf in vim-latex
+" make pdf in vim-latex, and compile as many times as necessary
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats='dvi, pdf'
