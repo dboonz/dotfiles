@@ -315,3 +315,6 @@ inoremap # X<C-H>#
 " make pdf in vim-latex, and compile as many times as necessary
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats='dvi, pdf'
+
+" change the CWD to reflect the file that is edited
+set autochdir
